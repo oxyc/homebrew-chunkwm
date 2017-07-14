@@ -13,8 +13,6 @@ class Chunkwm < Formula
   option "without-border", "Do not build border plugin."
   option "without-tiling", "Do not build tiling plugin."
 
-  depends_on :xcode => ["8", :build]
-
   def install
     # create plugins and example directories
     (share/"chunkwm_plugins").mkpath
